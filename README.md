@@ -1,5 +1,16 @@
 # GUARDIAN BACKEND SERVICE
 
+## Resources
+
+Base url: `/api/v1`
+
+### Game
+
+| URL           | Method | Body    | Description                                  |
+| ------------- | ------ | ------- | -------------------------------------------- |
+| `/Heroes`     | GET    | `empty` | Get all heroes in the system                 |
+| `/Villains`   | GET    | `empty` | Get all villains in the system               |
+
 ## Database relational model diagram  
 
 ![Diseño de bd  diagrama](https://user-images.githubusercontent.com/55267781/204887281-34f6c540-9da7-4eac-a2ac-d3e717adf27f.png)  
