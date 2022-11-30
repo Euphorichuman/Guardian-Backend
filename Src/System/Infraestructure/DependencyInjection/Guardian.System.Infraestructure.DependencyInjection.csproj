@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Application\Guardian.System.Core.Application.csproj" />
+    <ProjectReference Include="..\..\Presentation\RestAPI\Guardian.System.Presentation.RestAPI.csproj" />
+    <ProjectReference Include="..\MySqlDb\Guardian.System.Infraestructure.MySqlDb.csproj" />
+  </ItemGroup>
+
+</Project>

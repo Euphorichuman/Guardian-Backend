@@ -1,0 +1,7 @@
+<Project>
+  <ItemGroup>
+    <Compile Update="ServiceCollectionExtensions.*.cs">
+      <DependentUpon>ServiceCollectionExtensions.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>
