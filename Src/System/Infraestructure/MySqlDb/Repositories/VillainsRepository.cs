@@ -14,10 +14,10 @@ namespace Guardian.System.Infraestructure.MySqlDb.Repositories
             this._context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
-        public async Task<IEnumerable<Villain>> GetVillansAsync()
+        public async Task<IEnumerable<Villain>> GetVillainsAsync()
         {
-            List<DbVillain>? dbVillians = await _context.Villains.ToListAsync();
-            IEnumerable<Villain>? villians = dbVillians.Select(v => new Villain
+            List<DbVillain>? dbVillains = await _context.Villains.ToListAsync();
+            IEnumerable<Villain>? villains = dbVillains.Select(v => new Villain
             {
                 Id = v.Id,
                 Name = v.Name,
@@ -26,7 +26,7 @@ namespace Guardian.System.Infraestructure.MySqlDb.Repositories
                 Power = v.Power,
             });
 
-            return villians;
+            return villains;
         }
     }
 }

@@ -6,16 +6,16 @@ namespace Guardian.System.Core.Application.Services
 {
     public class VillainsService : IVillainsService
     {
-        private readonly IVillainsRepository _villiansRepository;
+        private readonly IVillainsRepository _villainsRepository;
 
-        public VillainsService(IVillainsRepository villiansRepository)
+        public VillainsService(IVillainsRepository villainsRepository)
         {
-            _villiansRepository = villiansRepository ?? throw new ArgumentNullException(nameof(villiansRepository));
+            _villainsRepository = villainsRepository ?? throw new ArgumentNullException(nameof(villainsRepository));
         }
 
-        public async Task<IEnumerable<Villain>> GetVillansAsync()
+        public async Task<IEnumerable<Villain>> GetVillainsAsync()
         {
-            return await this._villiansRepository.GetVillansAsync();
+            return await this._villainsRepository.GetVillainsAsync();
         }
     }
 }

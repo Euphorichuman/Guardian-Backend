@@ -8,6 +8,6 @@ namespace Guardian.System.Core.Domain.Services
         /// Will process and get all villians of the system.
         /// </summary>
         /// <returns>A collection of <see cref="Villain"/>.</returns>
-        public Task<IEnumerable<Villain>> GetVillansAsync();
+        public Task<IEnumerable<Villain>> GetVillainsAsync();
     }
 }

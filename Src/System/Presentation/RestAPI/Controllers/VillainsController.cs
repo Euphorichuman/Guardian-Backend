@@ -6,17 +6,17 @@ namespace Guardian.System.Presentation.RestAPI.Controllers
     [Route("/api/v1/[controller]")]
     public class VillainsController : ControllerBase
     {
-        private readonly IVillainsService _villiansService;
+        private readonly IVillainsService _villainsService;
 
-        public VillainsController(IVillainsService villiansService)
+        public VillainsController(IVillainsService villainsService)
         {
-            this._villiansService = villiansService ?? throw new ArgumentNullException(nameof(villiansService));
+            this._villainsService = villainsService ?? throw new ArgumentNullException(nameof(villainsService));
         }
 
         [HttpGet]
         public async Task<IActionResult> GetVilliansAsync()
         {
-            return this.Ok(await this._villiansService.GetVillansAsync());
+            return this.Ok(await this._villainsService.GetVillainsAsync());
         }
     }
 }
