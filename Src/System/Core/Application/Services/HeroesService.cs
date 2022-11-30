@@ -1,19 +1,19 @@
 ﻿using Guardian.System.Core.Domain.Entities;
+using Guardian.System.Core.Domain.Repositories;
 using Guardian.System.Core.Domain.Services;
-using Guardian.System.Core.Domain.Entities;
 
 namespace Guardian.System.Core.Application.Services
 {
-    public class HeroesService : IVilliansService
+    public class HeroesService : IHeroesService
     {
-        private readonly IVilliansService _heroesService;
+        private readonly IHeroesRepository _heroesRepository;
 
-        public HeroesService(IVilliansService heroesService)
+        public HeroesService(IHeroesRepository heroesRepository)
         {
-            _heroesService = heroesService ?? throw new ArgumentNullException(nameof(heroesService)); ;
+            _heroesRepository = heroesRepository ?? throw new ArgumentNullException(nameof(heroesRepository));
         }
 
-        public Task<IEnumerable<Villian>> GetVillansAsync()
+        public Task<IEnumerable<Hero>> GetHeroesAsync()
         {
             throw new NotImplementedException();
         }

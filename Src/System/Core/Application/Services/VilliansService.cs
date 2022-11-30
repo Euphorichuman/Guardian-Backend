@@ -1,16 +1,16 @@
 ﻿using Guardian.System.Core.Domain.Entities;
+using Guardian.System.Core.Domain.Repositories;
 using Guardian.System.Core.Domain.Services;
-using Guardian.System.Core.Domain.Entities;
 
 namespace Guardian.System.Core.Application.Services
 {
     public class VilliansService : IVilliansService
     {
-        private readonly IVilliansService _villiansService;
+        private readonly IVilliansRepository _villiansRepository;
 
-        public VilliansService(IVilliansService villiansService)
+        public VilliansService(IVilliansRepository villiansRepository)
         {
-            _villiansService = villiansService ?? throw new ArgumentNullException(nameof(villiansService)); ;
+            _villiansRepository = villiansRepository ?? throw new ArgumentNullException(nameof(villiansRepository));
         }
 
         public Task<IEnumerable<Villian>> GetVillansAsync()

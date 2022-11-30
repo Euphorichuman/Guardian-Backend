@@ -7,6 +7,8 @@ namespace Microsoft.Extensions.DependencyInjection
         public static IServiceCollection AddGuardianSystem(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddSystemCoreApplication();
+            services.AddMySqlDbContexts(configuration);
+            services.AddMySqlDbRepositories();
 
             return services;
         }

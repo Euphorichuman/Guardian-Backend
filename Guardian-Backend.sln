@@ -5,7 +5,7 @@ VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{39AC7000-3429-4A8A-AAF6-9307B57F3013}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Src\Server\Server.csproj", "{32F56BFB-DA04-4B4C-A639-C135ABEA35A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Src\Server\Server.csproj", "{32F56BFB-DA04-4B4C-A639-C135ABEA35A5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "System", "System", "{817598DC-2FB5-421F-8701-93B51C7BBA38}"
 EndProject
@@ -15,15 +15,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructure", "Infraest
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{505F9939-7C7F-4988-BE91-994CF490F032}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guardian.System.Core.Domain", "Src\System\Core\Domain\Guardian.System.Core.Domain.csproj", "{DE960303-712C-4451-8B46-5B0079FCF4A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Guardian.System.Core.Domain", "Src\System\Core\Domain\Guardian.System.Core.Domain.csproj", "{DE960303-712C-4451-8B46-5B0079FCF4A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guardian.System.Core.Application", "Src\System\Core\Application\Guardian.System.Core.Application.csproj", "{571EC1D1-6018-4547-9485-A2FA9B9F57D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Guardian.System.Core.Application", "Src\System\Core\Application\Guardian.System.Core.Application.csproj", "{571EC1D1-6018-4547-9485-A2FA9B9F57D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guardian.System.Infraestructure.MySqlDb", "Src\System\Infraestructure\MySqlDb\Guardian.System.Infraestructure.MySqlDb.csproj", "{EF362213-2A6A-4822-9933-CDC47396DBA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Guardian.System.Infraestructure.MySqlDb", "Src\System\Infraestructure\MySqlDb\Guardian.System.Infraestructure.MySqlDb.csproj", "{EF362213-2A6A-4822-9933-CDC47396DBA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guardian.System.Infraestructure.DependencyInjection", "Src\System\Infraestructure\DependencyInjection\Guardian.System.Infraestructure.DependencyInjection.csproj", "{4B5E12F5-5B55-49AA-852A-29BA405B3DCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Guardian.System.Infraestructure.DependencyInjection", "Src\System\Infraestructure\DependencyInjection\Guardian.System.Infraestructure.DependencyInjection.csproj", "{4B5E12F5-5B55-49AA-852A-29BA405B3DCB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guardian.System.Presentation.RestAPI", "Src\System\Presentation\RestAPI\Guardian.System.Presentation.RestAPI.csproj", "{5C0BA7C4-0731-4C53-9902-572240958041}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Guardian.System.Presentation.RestAPI", "Src\System\Presentation\RestAPI\Guardian.System.Presentation.RestAPI.csproj", "{5C0BA7C4-0731-4C53-9902-572240958041}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{26D60835-0F2E-49C0-B0B5-D7C882FE7F70}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig.inferred = .editorconfig.inferred
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
