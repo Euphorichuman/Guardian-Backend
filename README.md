@@ -4,7 +4,7 @@
 
 Base url: `/api/v1`
 
-### Game
+### Services
 
 | URL           | Method | Body    | Description                                  |
 | ------------- | ------ | ------- | -------------------------------------------- |
