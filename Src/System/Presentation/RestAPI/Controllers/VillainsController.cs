@@ -4,11 +4,11 @@ namespace Guardian.System.Presentation.RestAPI.Controllers
 {
     [ApiController]
     [Route("/api/v1/[controller]")]
-    public class VilliansController : ControllerBase
+    public class VillainsController : ControllerBase
     {
-        private readonly IVilliansService _villiansService;
+        private readonly IVillainsService _villiansService;
 
-        public VilliansController(IVilliansService villiansService)
+        public VillainsController(IVillainsService villiansService)
         {
             this._villiansService = villiansService ?? throw new ArgumentNullException(nameof(villiansService));
         }

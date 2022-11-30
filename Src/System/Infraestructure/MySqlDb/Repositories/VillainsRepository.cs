@@ -5,26 +5,29 @@ using Guardian.System.Infraestructure.MySqlDb.Entities;
 
 namespace Guardian.System.Infraestructure.MySqlDb.Repositories
 {
-    public class HeroesRepository : IHeroesRepository
+    public class VillainsRepository : IVillainsRepository
     {
         private readonly SystemDbContext _context;
 
-        public HeroesRepository(SystemDbContext context)
+        public VillainsRepository(SystemDbContext context)
         {
             this._context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
-        public async Task<IEnumerable<Hero>> GetHeroesAsync()
+        public async Task<IEnumerable<Villain>> GetVillansAsync()
         {
-            List<DbHero>? dbHeroes = await _context.Heroes.ToListAsync();
-            IEnumerable<Hero>? heroes = dbHeroes.Select(v => new Hero
+            List<DbVillain>? dbVillians = await _context.Villains.ToListAsync();
+            IEnumerable<Villain>? villians = dbVillians.Select(v => new Villain
             {
                 Id = v.Id,
                 Name = v.Name,
                 Age = v.Age,
+                Origin = v.Origin,
+                Power = v.Power,
             });
 
-            return heroes;
+            return villians;
+
         }
     }
 }

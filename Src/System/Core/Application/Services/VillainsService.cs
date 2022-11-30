@@ -4,18 +4,18 @@ using Guardian.System.Core.Domain.Services;
 
 namespace Guardian.System.Core.Application.Services
 {
-    public class VilliansService : IVilliansService
+    public class VillainsService : IVillainsService
     {
-        private readonly IVilliansRepository _villiansRepository;
+        private readonly IVillainsRepository _villiansRepository;
 
-        public VilliansService(IVilliansRepository villiansRepository)
+        public VillainsService(IVillainsRepository villiansRepository)
         {
             _villiansRepository = villiansRepository ?? throw new ArgumentNullException(nameof(villiansRepository));
         }
 
-        public Task<IEnumerable<Villian>> GetVillansAsync()
+        public async Task<IEnumerable<Villain>> GetVillansAsync()
         {
-            throw new NotImplementedException();
+            return await this._villiansRepository.GetVillansAsync();
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Microsoft.Extensions.DependencyInjection
         private static IServiceCollection AddServices(this IServiceCollection services)
         {
             services.AddScoped<IHeroesService, HeroesService>();
-            services.AddScoped<IVilliansService, VilliansService>();
+            services.AddScoped<IVillainsService, VillainsService>();
 
             return services;
         }

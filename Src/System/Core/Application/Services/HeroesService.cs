@@ -13,9 +13,9 @@ namespace Guardian.System.Core.Application.Services
             _heroesRepository = heroesRepository ?? throw new ArgumentNullException(nameof(heroesRepository));
         }
 
-        public Task<IEnumerable<Hero>> GetHeroesAsync()
+        public async Task<IEnumerable<Hero>> GetHeroesAsync()
         {
-            throw new NotImplementedException();
+            return await this._heroesRepository.GetHeroesAsync();
         }
     }
 }

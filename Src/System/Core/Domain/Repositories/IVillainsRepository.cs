@@ -2,12 +2,12 @@
 
 namespace Guardian.System.Core.Domain.Repositories
 {
-    public interface IVilliansRepository
+    public interface IVillainsRepository
     {
         /// <summary>
         /// Get all the persisted villians of the system.
         /// </summary>
-        /// <returns>A collection of <see cref="Villian"/>.</returns>
-        public Task<IEnumerable<Villian>> GetVillansAsync();
+        /// <returns>A collection of <see cref="Villain"/>.</returns>
+        public Task<IEnumerable<Villain>> GetVillansAsync();
     }
 }

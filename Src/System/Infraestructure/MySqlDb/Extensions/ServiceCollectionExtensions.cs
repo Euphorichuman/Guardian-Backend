@@ -19,7 +19,7 @@ namespace Microsoft.Extensions.DependencyInjection
         public static IServiceCollection AddMySqlDbRepositories(this IServiceCollection services)
         {
             services.AddScoped<IHeroesRepository, HeroesRepository>();
-            services.AddScoped<IVilliansRepository, VilliansRepository>();
+            services.AddScoped<IVillainsRepository, VillainsRepository>();
 
             return services;
         }

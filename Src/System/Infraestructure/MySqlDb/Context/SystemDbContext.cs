@@ -11,6 +11,6 @@ namespace Guardian.System.Infraestructure.MySqlDb.Context
 
         public DbSet<DbHero> Heroes { get; set; }
 
-        public DbSet<DbVillian> Villians { get; set; }
+        public DbSet<DbVillain> Villains { get; set; }
     }
 }
