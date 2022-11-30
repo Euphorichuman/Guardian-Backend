@@ -27,7 +27,6 @@ namespace Guardian.System.Infraestructure.MySqlDb.Repositories
             });
 
             return villians;
-
         }
     }
 }
